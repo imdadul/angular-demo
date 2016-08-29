@@ -1,0 +1,25 @@
+<div class="inner statistics" ng-controller="StatisticsController">
+	<div class="btn-group" data-toggle="buttons">
+		<label class="btn btn-primary" ng-class="{'active': m.name == selectedMode.name}" ng-repeat = "m in barModes" ng-click="$parent.selectedMode = m;$parent.updateBars();">
+			<input type="radio" name="options" autocomplete="off"  > {{m.name}}
+		</label>
+	</div>
+
+	<div class="row bar-wrapper" style="height: 500px;">
+		<div class="bar" ng-repeat="b in bars"
+		ng-style="{'height':b.height+'%'}">
+		<span >{{b.name}}</span>
+		<span >Total: {{b.count}}</span>
+	</div>
+</div>
+</div>
+
+<style type="text/css">
+	.bar {
+		width: 80px;
+		margin-right: 10px;
+		background-color: gray;
+		display: inline-block;
+		vertical-align: bottom;
+	}
+</style>

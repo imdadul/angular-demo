@@ -1,0 +1,23 @@
+<nav class="navbar navbar-default" ng-controller="LayoutController">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Fruit Repository</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li>
+        <a ui-sref="{{ROUTE_INFO.MANAGEMENT.STATE}}" ng-class="{active:isActive('{{ROUTE_INFO.MANAGEMENT.URL}}')}">
+          <i class="bts bt-user"></i> {{ROUTE_INFO.MANAGEMENT.TITLE}}
+        </a>
+        </li>
+        <li><a ui-sref="{{ROUTE_INFO.STATISTICS.STATE}}" ng-class="{active:isActive('{{ROUTE_INFO.STATISTICS.URL}}')}">
+          <i class="bts bt-user"></i> {{ROUTE_INFO.STATISTICS.TITLE}}
+        </a>
+      
+      </li>
+    </ul>
+  </div>
+</nav>
+  
+<div class="container">
+   <div class="well" ui-view></div>
+</div>
