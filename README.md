@@ -12,12 +12,12 @@ I used simplehttpserver (https://www.npmjs.com/package/simplehttpserver)
 
 Install using npm
 
-  npm install simplehttpserver -g
+  <code>  npm install simplehttpserver -g </code>
 
 Usage
 
 Run simplehttpserver by command
 
- simplehttpserver [directory]
+ <code> simplehttpserver [directory] </code>
  
  http://localhost:8000   .........Gooo!
